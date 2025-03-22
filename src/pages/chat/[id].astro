@@ -1,0 +1,30 @@
+---
+import VistaMensajes from "../../layouts/VistaMensajes.astro";
+
+import NombreChat from "../../components/chats/NombreChat.astro";
+import CajaMensajesChat from "../../components/chats/CajaMensajesChat.astro";
+import InputsChat from "../../components/chats/InputsChat.astro";
+
+import chats from "../../data/chats.json"
+import mensajes from "../../data/mensajes.json"
+
+const { id } = Astro.params;
+const chat = chats.find(c => c.id === id);
+const nombre = chat?.nombre ?? "Desconocido";
+const mensajesChat = mensajes[nombre] ?? mensajes["default"];
+
+---
+
+<VistaMensajes>
+  <slot slot="contacto">
+    <NombreChat nombre={nombre} />
+  </slot>
+
+  <slot slot="mensajes">
+    <CajaMensajesChat id={id} mensajes={mensajesChat} />
+  </slot>
+
+  <slot slot="inputs">
+    <InputsChat />
+  </slot>
+</VistaMensajes>

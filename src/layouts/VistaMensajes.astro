@@ -1,0 +1,18 @@
+---
+import Raiz from './Raiz.astro'; // Importamos el layout principal
+
+---
+
+<Raiz>
+  <section>
+    <slot name="contacto" />
+  </section>
+  
+  <main>
+    <slot name="mensajes" />
+  </main>
+  
+  <section>
+    <slot name="inputs" />
+  </section>
+</Raiz>
