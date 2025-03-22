@@ -1,14 +1,54 @@
 [
   {
     "id": 0,
-    "nombre": "pepe",
-    "numero": "01231456",
-    "grupo": []
+    "nombre": "Numero desconocido",
+    "nombreContacto": null,
+    "numero": 250250250250,
+    "estado": "Hey there! I am using WhatsApp.",
+    "grupo": null,
+    "descripcion": null,
+    "fecha": null
+
   },
   {
     "id": 1,
-    "nombre": "pepa",
-    "numero": "12314567",
-    "grupo": []
+    "nombre": "Pepe Perez",
+    "nombreContacto": null,
+    "numero": 541187654321,
+    "estado": "¡Hola! Estoy usando WhatsApp",
+    "grupo": null,
+    "descripcion": null,
+    "fecha": null
+
+  },
+  {
+    "id": 2,
+    "nombre": "Ramona Rosalbete Rios",
+    "nombreContacto": "ramona",
+    "numero": 541176543210,
+    "estado": "Llego como una ilusión",
+    "grupo": null,
+    "descripcion": null,
+    "fecha": null
+  },
+  {
+    "id": 3,
+    "nombre": "Suleipo420",
+    "nombreContacto": "suleipan",
+    "numero": 541512341234,
+    "estado": "carpe diem",
+    "grupo": null,
+    "descripcion": null,
+    "fecha": null
+  },
+  {
+    "id": 4,
+    "nombre": "La bida misma",
+    "nombreContacto": null,
+    "numero": null,
+    "estado": null,
+    "grupo": [1, 2, 3],
+    "descripcion": "ke pasa",
+    "fecha": 20210812
   }
 ]

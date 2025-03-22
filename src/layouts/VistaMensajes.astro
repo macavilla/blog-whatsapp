@@ -4,15 +4,35 @@ import Raiz from './Raiz.astro'; // Importamos el layout principal
 ---
 
 <Raiz>
-  <section>
+  <section class="contacto">
     <slot name="contacto" />
   </section>
   
-  <main>
+  <main class="mensajes">
     <slot name="mensajes" />
   </main>
   
-  <section>
+  <section class="inputs">
     <slot name="inputs" />
   </section>
 </Raiz>
+
+<style>
+
+  .contacto {
+    height: 100px;
+    background-color: rgb(7, 94, 84);
+  }
+
+  .mensajes {
+    overflow-y: auto;
+    height: calc(100vh - 180px);
+    background-image: url("/fondoChatOscuro.webp");
+  }
+
+  .inputs {
+    height: 80px;
+    background-color: rgb(48, 56, 55);
+  }
+
+</style>
