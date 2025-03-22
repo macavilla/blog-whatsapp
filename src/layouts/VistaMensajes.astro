@@ -1,15 +1,29 @@
 ---
-import Raiz from './Raiz.astro'; // Importamos el layout principal
+import Raiz from './Raiz.astro';
+
+import { Image } from 'astro:assets';
+import fondoChat from '../assets/fondoChatOscuro.webp';
 
 ---
 
-<Raiz>
+<Raiz class="raiz">
   <section class="contacto">
     <slot name="contacto" />
   </section>
   
   <main class="mensajes">
-    <slot name="mensajes" />
+    <Image 
+      src={fondoChat} 
+      alt="Textura fondo mensajes" 
+      format="webp" 
+      widths={[320, 640, 1280, 1920]} 
+      sizes="100vw" 
+      class="fondo-mensajes"
+    />
+    <slot 
+      name="mensajes"
+      class="contenido-mensajes"
+    />
   </main>
   
   <section class="inputs">
@@ -18,21 +32,46 @@ import Raiz from './Raiz.astro'; // Importamos el layout principal
 </Raiz>
 
 <style>
+  .raiz: {
+    overflow: hidden;
+  }
 
   .contacto {
     height: 100px;
+    overflow: hidden;
     background-color: rgb(7, 94, 84);
   }
 
   .mensajes {
-    overflow-y: auto;
+    width: 100%%;
     height: calc(100vh - 180px);
-    background-image: url("/fondoChatOscuro.webp");
+    overflow: hidden;
+    position: relative;
+  }
+
+  .fondo-mensajes {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+
+  .contenido-mensajes {
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .contenido-mensajes::-webkit-scrollbar {
+    display: none;
   }
 
   .inputs {
     height: 80px;
+    overflow: hidden;
     background-color: rgb(48, 56, 55);
   }
-
 </style>
