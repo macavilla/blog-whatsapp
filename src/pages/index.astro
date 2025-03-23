@@ -1,9 +1,36 @@
 ---
-import Raiz from '../layouts/Raiz.astro';
-import VistaMensajes from '../layouts/VistaMensajes.astro';
+import VistaRaiz from '../layouts/VistaRaiz.astro';
 
 ---
 
-<Raiz>
-	<VistaMensajes />
-</Raiz>
+<!-- --ACS-- -->
+<VistaRaiz>
+	<h2>_________</h2>
+	<h2>Lista chats:</h2>
+	<h2><a href="/chat/25025">yo</a></h2>
+	<h2><a href="/chat/1">pepe</a></h2>
+	<h2><a href="/chat/4">La bida misma🍕💩💤</a></h2>
+	<h2><a href="/chat/0">desconocido</a></h2>
+</VistaRaiz>
+
+<!-- --CCS-- -->
+<style>
+	h2 {
+		margin: 20px;
+		margin-left: 12vw;
+		font-size: 1.6rem;
+	}
+
+	a {
+		color: var(--cl-gris-claro-texto);
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: var(--cl-gris-fondo-texto);
+	}
+
+	a:active {
+		color: var(--cl-blanco-sld-texto);
+	}
+</style>

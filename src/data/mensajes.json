@@ -1,8 +1,402 @@
-[
-  [],
-  [],
-  [],
-  [],
-  [],
-  []
-]
+{
+  "_default": [],
+  "0": [
+    {"texto": "Cuando el último de los concurrentes tomó asiento, el Sr. A. se dirigió al púlpito, desde donde dijo lo siguiente:", "origen": 0, "fecha": 20161122, "hora": 2150},
+    {"texto": "«Recuerdo, en efecto, cuando el Sr. B. nos repetía: *Tan sólo unas pocas palabras me bastarían para confundirlos; sin necesidad de mentiras ni metáforas, sólo palabras…*» —la emoción lo hacía titubear, pero continuó— «¡Vaya que decía la verdad! Porque ya nadie aquí duda que las narraciones son fáciles de quebrar en pequeños pedacitos, con los que luego se puede jugar a construir una infinitud de figuras. Y esa lucidez, amigos, se la debemos a nuestro querido maestro, que empeñó religiosamente su atención en ablandar nuestros corazones. Con ejemplos tan sutiles, pero a la vez tan demoledores. Como aquella sentencia inolvidable que alguna vez nos hizo notar: *Imaginen que les cuento una historia de un funeral, en donde un discurso imposible se termina confundiendo con las palabras pretéritas del difunto, y que, al terminar, ustedes ya no puedan distinguir si quien les habla es el vivo o el muerto ¿No sería acaso una confusión estúpida?*» ", "origen": 0, "fecha": 20161122, "hora": 2151},
+    {"texto": "?? quien es", "origen": 25025, "fecha": 20201025, "hora": 2025}
+  ],
+  "1": [
+    {"texto": "hola", "origen": 1, "fecha": 20220301, "hora": 2343},
+    {"texto": "soy pepe", "origen": 1, "fecha": 20220301, "hora": 2343},
+    {"texto": "como estas?", "origen": 1, "fecha": 20220301, "hora": 2343},
+    {"texto": "te queria pedir un favor... me cortaron el wifi, puedo usar el tuyo hasta mañana?", "origen": false, "fecha": 20220301, "hora": 2345},
+    {"texto": "apenas me paguen me pongo al dia y te aviso", "origen": 1, "fecha": 20220301, "hora": 2345},
+    {"texto": "hola pepe, si obvio", "origen": 25025, "fecha": 20220302, "hora": 9012},
+    {"texto": "la red es Movistar-J23nIDn y la clave es Undomingosindormir24", "origen": 25025, "fecha": 20220302, "hora": 9012},
+    {"texto": "okiii muchas gracias", "origen": 1, "fecha": 20220302, "hora": 9012}
+  ],
+  "2": [
+    {"texto": "hola", "origen": 2, "fecha": 20220301, "hora": 2343},
+    {"texto": "soy ramona", "origen": 2, "fecha": 20220301, "hora": 2343},
+    {"texto": "como estas?", "origen": 2, "fecha": 20220301, "hora": 2343},
+    {"texto": "te queria pedir un favor... me cortaron el wifi, puedo usar el tuyo hasta mañana?", "origen": false, "fecha": 20220301, "hora": 2345},
+    {"texto": "apenas me paguen me pongo al dia y te aviso", "origen": 2, "fecha": 20220301, "hora": 2345},
+    {"texto": "hola ramona, si obvio", "origen": 25025, "fecha": 20220302, "hora": 9012},
+    {"texto": "la red es Movistar-J23nIDn y la clave es Undomingosindormir24", "origen": 25025, "fecha": 20220302, "hora": 9012},
+    {"texto": "okiii muchas gracias", "origen": 2, "fecha": 20220302, "hora": 9012}
+  ],
+  "3": [
+    {"texto": "hola", "origen": 3, "fecha": 20220301, "hora": 2343},
+    {"texto": "soy el sule", "origen": 3, "fecha": 20220301, "hora": 2343},
+    {"texto": "como estas?", "origen": 3, "fecha": 20220301, "hora": 2343},
+    {"texto": "te queria pedir un favor... me cortaron el wifi, puedo usar el tuyo hasta mañana?", "origen": false, "fecha": 20220301, "hora": 2345},
+    {"texto": "apenas me paguen me pongo al dia y te aviso", "origen": 3, "fecha": 20220301, "hora": 2345},
+    {"texto": "hola sulepo, si obvio", "origen": 25025, "fecha": 20220302, "hora": 9012},
+    {"texto": "la red es Movistar-J23nIDn y la clave es Undomingosindormir24", "origen": 25025, "fecha": 20220302, "hora": 9012},
+    {"texto": "okiii muchas gracias", "origen": 3, "fecha": 20220302, "hora": 9012}
+  ],
+  "4": [
+    {"texto": "hola grupo", "origen": 3, "fecha": 20220309, "hora": 2032},
+    {"texto": "Hola suleimoso", "origen": 1, "fecha": 20220309, "hora": 2033},
+    {"texto": "hola kepetulios", "origen": 25025, "fecha": 20220309, "hora": 2034},
+    {"texto": "jsjsjkas", "origen": 3, "fecha": 20220309, "hora": 2035},
+    {"texto": "holaaaa voy a pedir pizza", "origen": 2, "fecha": 20220309, "hora": 2048},
+    {"texto": "quieren? q pido?", "origen": 2, "fecha": 20220309, "hora": 2048},
+    {"texto": "Ya🙏 piza de coliflor", "origen": 1, "fecha": 20220309, "hora": 2049},
+    {"texto": "y otra de de colipato dulce", "origen": 25025, "fecha": 20220309, "hora": 2049},
+    {"texto": "de colisionador de hadrones?", "origen": 2, "fecha": 20220309, "hora": 2051},
+    {"texto": "Siii tambien", "origen": 1, "fecha": 20220309, "hora": 2052},
+    {"texto": "De colinas verdes con lluvia☝️", "origen": 1, "fecha": 20220309, "hora": 2053},
+    {"texto": "de cola de carpintero☝️☝️☝️", "origen": 3, "fecha": 20220309, "hora": 2053},
+    {"texto": "ok anotado", "origen": 2, "fecha": 20220309, "hora": 2055},
+    {"texto": "son 5000 por persona", "origen": 2, "fecha": 20220309, "hora": 2059},
+    {"texto": "ahi llegaron las pizzas, quien puede ir?", "origen": 2, "fecha": 20220309, "hora": 2137},
+    {"texto": "Voy", "origen": 1, "fecha": 20220309, "hora": 2137},
+    {"texto": "dejale propina", "origen": 2, "fecha": 20220309, "hora": 2139}
+  ],
+  "25025": [
+    {
+      "texto": "comprar una cebolla",
+      "origen": 25025,
+      "fecha": 20220110,
+      "hora": 900
+    },
+    {
+      "texto": "lentejas con genjibre",
+      "origen": 25025,
+      "fecha": 20220111,
+      "hora": 1500
+    },
+    {
+      "texto": "no olvidarrrrr: uvita premium",
+      "origen": 25025,
+      "fecha": 20220112,
+      "hora": 1800
+    },
+    {
+      "texto": "comprar 3 almendras",
+      "origen": 25025,
+      "fecha": 20220113,
+      "hora": 1000
+    },
+    {
+      "texto": "botellas de plastico, acido muriatico y aluminio",
+      "origen": 25025,
+      "fecha": 20220114,
+      "hora": 1200
+    },
+    {
+      "texto": "fideos y pure tomate",
+      "origen": 25025,
+      "fecha": 20220115,
+      "hora": 1700
+    },
+    {
+      "texto": "20k de harina",
+      "origen": 25025,
+      "fecha": 20220116,
+      "hora": 830
+    },
+    {
+      "texto": "atun pa celebrar",
+      "origen": 25025,
+      "fecha": 20220117,
+      "hora": 2000
+    },
+    {
+      "texto": "nada",
+      "origen": 25025,
+      "fecha": 20220118,
+      "hora": 1400
+    },
+    {
+      "texto": "todo",
+      "origen": 25025,
+      "fecha": 20220119,
+      "hora": 900
+    },
+    {
+      "texto": "pan para hoy...",
+      "origen": 25025,
+      "fecha": 20220120,
+      "hora": 1100
+    },
+    {
+      "texto": "a ver compra una manzana",
+      "origen": 25025,
+      "fecha": 20220121,
+      "hora": 1600
+    },
+    {
+      "texto": "agua en polvo",
+      "origen": 25025,
+      "fecha": 20220122,
+      "hora": 1330
+    },
+    {
+      "texto": "un chicle",
+      "origen": 25025,
+      "fecha": 20220123,
+      "hora": 1810
+    },
+    {
+      "texto": "un yogur",
+      "origen": 25025,
+      "fecha": 20220124,
+      "hora": 1015
+    },
+    {
+      "texto": "una papa",
+      "origen": 25025,
+      "fecha": 20220125,
+      "hora": 930
+    },    {
+      "texto": "una papa",
+      "origen": 25025,
+      "fecha": 20220126,
+      "hora": 930
+    },    {
+      "texto": "una papa",
+      "origen": 25025,
+      "fecha": 20220127,
+      "hora": 930
+    },    {
+      "texto": "una papa",
+      "origen": 25025,
+      "fecha": 20220128,
+      "hora": 930
+    },    {
+      "texto": "una papa",
+      "origen": 25025,
+      "fecha": 20220129,
+      "hora": 930
+    },    {
+      "texto": "una papa",
+      "origen": 25025,
+      "fecha": 20220130,
+      "hora": 930
+    },    {
+      "texto": "una papa",
+      "origen": 25025,
+      "fecha": 20220131,
+      "hora": 930
+    },    {
+      "texto": "una papa",
+      "origen": 25025,
+      "fecha": 20220201,
+      "hora": 930
+    },    {
+      "texto": "una papa",
+      "origen": 25025,
+      "fecha": 20220202,
+      "hora": 930
+    },    {
+      "texto": "una papa",
+      "origen": 25025,
+      "fecha": 20220203,
+      "hora": 930
+    },    {
+      "texto": "una papa",
+      "origen": 25025,
+      "fecha": 20220204,
+      "hora": 930
+    },    {
+      "texto": "5k harina. 5k fideos",
+      "origen": 25025,
+      "fecha": 20220205,
+      "hora": 930
+    },
+    {
+      "texto": "aceite fino",
+      "origen": 25025,
+      "fecha": 20220206,
+      "hora": 1400
+    },
+    {
+      "texto": "cajon de banana",
+      "origen": 25025,
+      "fecha": 20220207,
+      "hora": 1700
+    },
+    {
+      "texto": "maruchan",
+      "origen": 25025,
+      "fecha": 20220208,
+      "hora": 1100
+    },
+    {
+      "texto": "te de lechuga",
+      "origen": 25025,
+      "fecha": 20220209,
+      "hora": 1500
+    },
+    {
+      "texto": "3 biscui pocha",
+      "origen": 25025,
+      "fecha": 20220210,
+      "hora": 1000
+    },
+    {
+      "texto": "mas harina",
+      "origen": 25025,
+      "fecha": 20220211,
+      "hora": 1400
+    },
+    {
+      "texto": "12 teles 6 compu 4 refri 3 lavadoras 2 jacuzzi",
+      "origen": 25025,
+      "fecha": 20220212,
+      "hora": 1830
+    },
+    {
+      "texto": "un corazon",
+      "origen": 25025,
+      "fecha": 20220213,
+      "hora": 930
+    },
+    {
+      "texto": "harina",
+      "origen": 25025,
+      "fecha": 20220214,
+      "hora": 1600
+    },
+    {
+      "texto": "1/2 tomate",
+      "origen": 25025,
+      "fecha": 20220215,
+      "hora": 1100
+    },
+    {
+      "texto": "20k fideos",
+      "origen": 25025,
+      "fecha": 20220216,
+      "hora": 1300
+    },
+    {
+      "texto": "le bronie",
+      "origen": 25025,
+      "fecha": 20220217,
+      "hora": 900
+    },
+    {
+      "texto": "concentrado de glifosato",
+      "origen": 25025,
+      "fecha": 20220218,
+      "hora": 1500
+    },
+    {
+      "texto": "libertad igualdad fraternidad",
+      "origen": 25025,
+      "fecha": 20220219,
+      "hora": 1000
+    },
+    {
+      "texto": "se acabpo la cebolla",
+      "origen": 25025,
+      "fecha": 20220220,
+      "hora": 1400
+    },
+    {
+      "texto": "maruchan x5",
+      "origen": 25025,
+      "fecha": 20220221,
+      "hora": 1200
+    },
+    {
+      "texto": "1kg de miel :)",
+      "origen": 25025,
+      "fecha": 20220222,
+      "hora": 1700
+    },
+    {
+      "texto": "harina",
+      "origen": 25025,
+      "fecha": 20220223,
+      "hora": 1100
+    },
+    {
+      "texto": "harina",
+      "origen": 25025,
+      "fecha": 20220224,
+      "hora": 1100
+    },
+    {
+      "texto": "harina",
+      "origen": 25025,
+      "fecha": 20220225,
+      "hora": 1100
+    },
+    {
+      "texto": "harina",
+      "origen": 25025,
+      "fecha": 20220226,
+      "hora": 1100
+    },
+    {
+      "texto": "harina",
+      "origen": 25025,
+      "fecha": 20220227,
+      "hora": 1100
+    },
+    {
+      "texto": "harina",
+      "origen": 25025,
+      "fecha": 20220228,
+      "hora": 1100
+    },
+    {
+      "texto": "harina",
+      "origen": 25025,
+      "fecha": 20220301,
+      "hora": 1100
+    },
+    {
+      "texto": "harina",
+      "origen": 25025,
+      "fecha": 20220302,
+      "hora": 1100
+    },
+    {
+      "texto": "harina",
+      "origen": 25025,
+      "fecha": 20220303,
+      "hora": 1100
+    },
+    {
+      "texto": "harina",
+      "origen": 25025,
+      "fecha": 20220304,
+      "hora": 1100
+    },
+    {
+      "texto": "harina",
+      "origen": 25025,
+      "fecha": 20220305,
+      "hora": 1100
+    },
+    {
+      "texto": "harina",
+      "origen": 25025,
+      "fecha": 20220306,
+      "hora": 1100
+    },
+    {
+      "texto": "comida de gato elegante",
+      "origen": 25025,
+      "fecha": 20220307,
+      "hora": 1000
+    },
+    {
+      "texto": "javascript y maicena",
+      "origen": 25025,
+      "fecha": 20220308,
+      "hora": 1100
+    },
+    {
+      "texto": "humo enlatado al natural",
+      "origen": 25025,
+      "fecha": 20220309,
+      "hora": 2000
+    }
+  ]
+}

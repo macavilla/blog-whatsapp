@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  /* COLORES UI */
+  --cl-gris-linea-display: rgb(159, 159, 159);
+  --cl-gris-selec-display: rgb(81, 81, 81);
+  --cl-gris-escri-display: rgb(61, 61, 61);
+  --cl-gris-hover-display: rgb(56, 56, 56);
+  --cl-gris-fondo-display: rgb(44, 44, 44);
+  --cl-negro-linea-display: rgb(33, 33, 33);
+
+  /* COLORES TXT */
+  --cl-verde-fondo-texto: rgb(0, 92, 75);
+  --cl-gris-fondo-texto: rgb(53, 53, 53);
+  --cl-gris-oscur-texto: rgb(70, 70, 70);
+  --cl-gris-claro-texto: rgba(210, 210, 210, 0.9);
+  --cl-blanco-sld-texto: rgb(255, 255, 255);
+
+  /* FONT FAMILY */
+  --ff-display: "SF-UI-Display", ui-sans-serif, sans-serif; /* sin italic */
+  --ff-text: "SF-UI-Text", ui-sans-serif, sans-serif; /* con italic */
+
+  /* FONT WEIGHT */
+  --fw-regular: 400;    /* dislplay y text */
+  --fw-semibold: 600;   /* solo para dislplay */
+  --fw-bold: 700;       /* dislplay y text */
+}
+
+body, input, textarea, button, select {
+  font-family: var(--ff-display);
+  font-weight: var(--fw-regular);
+}

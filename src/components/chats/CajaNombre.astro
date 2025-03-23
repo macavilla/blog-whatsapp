@@ -1,0 +1,64 @@
+---
+import seleccionarArchivo from "../../utils/seleccionarArchivo";
+
+const { id, nombre } = Astro.props;
+const rutaAvatar = seleccionarArchivo("/avatar", id, "_default", "webp");
+
+---
+<!-- onerror="this.src = '/avatar/_default.webp'" -->
+ 
+<!-- --ACS-- -->
+<div class="contenedor-caja-nombre">
+  <div class="caja-nombre">
+    <a class="boton-atras" href="/">ᗕ</a>
+    <img class="avatar"
+      src={rutaAvatar}
+      alt="Imagen de perfil"
+    />
+    <h3 class="nombre">
+      {nombre}
+    </h3>
+  </div>
+</div>
+
+<!-- --CCS-- -->
+<style>
+  .contenedor-caja-nombre {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .caja-nombre {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .boton-atras {
+    margin-left: 4px;
+    margin-right: 0px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--cl-blanco-sld-texto);
+  }
+
+  .avatar {
+    width: 40px;
+    aspect-ratio: 1 / 1;
+    margin: 10px;
+    margin-right: 12px;
+    border-radius: 50%;
+  }
+
+  .nombre {
+    font-size: 1.1rem;
+    font-weight: var(--fw-semibold);
+    color: var(--cl-blanco-sld-texto);
+  }
+</style>

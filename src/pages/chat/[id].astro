@@ -1,47 +1,54 @@
 ---
 import VistaMensajes from "../../layouts/VistaMensajes.astro";
 
-import NombreChat from "../../components/chats/NombreChat.astro";
-import CajaMensajesChat from "../../components/chats/CajaMensajesChat.astro";
-import InputsChat from "../../components/chats/InputsChat.astro";
+import CajaNombre from "../../components/chats/CajaNombre.astro";
+import CajaMensajes from "../../components/chats/CajaMensajes.astro";
+import CajaInputs from "../../components/chats/CajaInputs.astro";
 
 import formatearTelefono from "../../utils/formatearTelefono.js";
 
-import chats from "../../data/chats.json"
-import mensajes from "../../data/mensajes.json"
+import chats from "../../data/chats.json";
+import mensajes from "../../data/mensajes.json";
+
+export function getStaticPaths() {
+  return chats.map(chat => ({
+    params: { id: chat.id } // parametro id viene de [id].astro
+  }));
+}
 
 const entradaIndice = Number(Astro.params.id);
-const esIndiceValido = !isNaN(entradaIndice) && chats[entradaIndice];
-const indice = esIndiceValido ? entradaIndice : 0;
-const chat = chats[indice];
+const chat = chats.find(ch => ch.id === entradaIndice) ?? chats["0"];
 
-const esContacto = Boolean(chat.nombreContacto);
-const telefono = formatearTelefono(chat.numero);
-const nombreChat = esContacto ? chat.nombreContacto : telefono;
-const mensajesChat = mensajes[chat.id] || mensajes[0];
+const mensajesChat = mensajes[chat.id] || mensajes["_default"];
 
 const grupo = chat.grupo || [];
 const esGrupo = grupo.length !== 0;
-const miembros = esGrupo ? grupo.map(i => chats[i]) : [];
+const miembros = esGrupo ? grupo.map(id => chats.find(ch => ch.id === id))
+  : [chat, chats.find(ch => ch.id === 25025)];
+
+const esContacto = Boolean(chat.nombreContacto);
+const telefono = formatearTelefono(chat.numero);
+const nombreChat = esGrupo ? chat.nombre
+  : chat.nombreContacto ?? telefono;
 
 ---
 
+<!-- --ACS-- -->
 <VistaMensajes>
-
-    <NombreChat
-      slot="contacto"
+    <CajaNombre
+      slot="maquetaNombre"
       id={chat.id}
       nombre={nombreChat}
     />
 
-    <CajaMensajesChat
-      slot="mensajes"
+    <CajaMensajes
+      slot="maquetaMensajes"
       mensajes={mensajesChat}
       miembros={miembros}
+      esGrupo={esGrupo}
     />
     
-    <InputsChat
-      slot="inputs"
+    <CajaInputs
+      slot="maquetaInputs"
     />
-
 </VistaMensajes>

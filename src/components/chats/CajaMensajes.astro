@@ -1,0 +1,46 @@
+---
+import TarjetaMensaje from "./TarjetaMensaje.astro";
+
+const { mensajes, miembros, esGrupo } = Astro.props;
+
+const colores = [
+  "rgb(6, 207, 156)",
+  "rgb(165, 179, 55)",
+  "rgb(226, 106, 182)",
+  "rgb(83, 189, 235)",
+  "rgb(255, 188, 56)",
+  "rgb(29, 170, 97)",
+  "rgb(167, 145, 255)",
+  "rgb(245, 111, 155)",
+  "rgb(83, 166, 253)"
+]
+
+---
+
+<!-- --ACS-- -->
+<ul class="caja-mensajes">
+  {mensajes.map((m, i, a) => {
+    const esPropio = m.origen === 25025;
+    const esSeguido = i > 0 && m.origen === a[i - 1].origen;
+    const origen = esGrupo ? miembros.find(b => b.id === m.origen)
+      : esPropio ? miembros[1] : miembros[0];
+    const color = colores[miembros.indexOf(origen) % colores.length];
+
+    return (
+    <TarjetaMensaje 
+      texto={m.texto}
+      color={color}
+      origen={origen}
+      esGrupo={esGrupo}
+      esPropio={esPropio}
+      esSeguido={esSeguido}
+    />
+  )})}
+</ul>
+
+<!-- --CCS-- -->
+<style>
+  .caja-mensajes {
+    padding: 30px 0;
+  }
+</style>

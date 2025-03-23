@@ -1,0 +1,52 @@
+/* DISPLAY */
+
+@font-face {
+  font-family: 'SF-UI-Display';
+  src: url('/fonts/SF-UI-Display-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF-UI-Display';
+  src: url('/fonts/SF-UI-Display-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF-UI-Display';
+  src: url('/fonts/SF-UI-Display-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* TEXT */
+
+@font-face {
+  font-family: 'SF-UI-Text';
+  src: url('/fonts/SF-UI-Text-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF-UI-Text';
+  src: url('/fonts/SF-UI-Text-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SF-UI-Text';
+  src: url('/fonts/SF-UI-Text-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF-UI-Text';
+  src: url('/fonts/SF-UI-Text-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}

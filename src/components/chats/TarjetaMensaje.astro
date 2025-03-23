@@ -1,0 +1,83 @@
+---
+import formatearTexto from "../../utils/formatearTexto";
+
+const { texto, origen, color, esGrupo, esPropio, esSeguido } = Astro.props;
+
+const textoFormateado = formatearTexto(texto);
+const nombre = origen.nombreContacto ?? "~" + origen.nombre;
+
+const clasePropio = esPropio ? "tipo-propio" : "tipo-normal";
+const claseSeguido = esSeguido ? "tipo-seguido" : "tipo-normala";
+const claseVisiblidad = (esGrupo && !esPropio && !esSeguido) ? "nombre-visible"
+  : "nombre-oculto";
+
+---
+
+<!-- --ACS-- -->
+<li class={`contenedor-tarjeta-mensaje ${clasePropio}`}>
+  <div class={`tarjeta-mensaje ${clasePropio} ${claseSeguido}`}>
+    <div
+      class={`mensaje-nombre ${claseVisiblidad}`}
+      style={`color: ${color};`}>
+        {nombre}
+    </div>
+    <div class="mensaje-texto" set:html={textoFormateado}></div>
+  </div>
+</li>
+
+<!-- --CSS-- -->
+<style>
+  .contenedor-tarjeta-mensaje {
+    width: 100%;
+    display: flex;
+  }
+
+  .contenedor-tarjeta-mensaje.tipo-propio {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .contenedor-tarjeta-mensaje.tipo-normal {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .tarjeta-mensaje {
+    margin: 5px;
+    margin-bottom: 3px;
+    padding: 10px;
+    padding-top: 6px;
+    max-width: min(80vw, 800px);
+    border-radius: 10px;
+  }
+
+  .tarjeta-mensaje.tipo-seguido {
+    margin-top: 0;
+  }
+
+  .tarjeta-mensaje.tipo-propio {
+    background-color: var(--cl-verde-fondo-texto);
+  }
+
+  .tarjeta-mensaje.tipo-normal {
+    background-color: var(--cl-gris-fondo-texto);
+  }
+
+  .mensaje-nombre {
+    font-weight: bold;
+  }
+
+  .nombre-visible {
+    display: block;
+  }
+
+  .nombre-oculto {
+    display: none;
+  }
+
+  .mensaje-texto {
+    font-family: var(--ff-text);
+    font-size: 1rem;
+    color: var(--cl-blanco);
+  }
+</style>
